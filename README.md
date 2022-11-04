@@ -1,3 +1,12 @@
+This is the fork of dompdf/dompdf library.
+
+All Credits Goes To Rightful Owners. No Copyright Infringement Intended. 
+
+----
+
+Below is the original readme of Dompdf
+======
+
 Dompdf
 ======
 
