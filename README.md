@@ -1,4 +1,5 @@
 This is the fork of dompdf/dompdf library.
+Arabic support is made by following [this solution](https://github.com/dompdf/dompdf/issues/2841#issue-1188595460).
 
 All Credits Goes To Rightful Owners. No Copyright Infringement Intended. 
 
