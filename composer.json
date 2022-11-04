@@ -1,7 +1,7 @@
 {
-    "name": "dompdf/dompdf",
+    "name": "laratweaks/dompdf-arabic",
     "type": "library",
-    "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+    "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter (arabic support)",
     "homepage": "https://github.com/dompdf/dompdf",
     "license": "LGPL-2.1",
     "authors": [
