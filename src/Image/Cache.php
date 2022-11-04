@@ -1,20 +1,20 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Image;
+namespace DompdfArabic\Image;
 
-use Dompdf\Options;
-use Dompdf\Helpers;
-use Dompdf\Exception\ImageException;
+use DompdfArabic\Options;
+use DompdfArabic\Helpers;
+use DompdfArabic\Exception\ImageException;
 
 /**
  * Static class that resolves image urls and downloads and caches
  * remote images if required.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Cache
 {
@@ -47,7 +47,7 @@ class Cache
      * @param string $protocol  Default protocol if none specified in $url
      * @param string $host      Default host if none specified in $url
      * @param string $base_path Default path if none specified in $url
-     * @param Options $options  An instance of Dompdf\Options
+     * @param Options $options  An instance of DompdfArabic\Options
      *
      * @return array            An array with three elements: The local path to the image, the image
      *                          extension, and an error message if the image could not be cached

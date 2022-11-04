@@ -1,18 +1,18 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Frame;
+namespace DompdfArabic\Frame;
 
 use DOMDocument;
 use DOMNode;
 use DOMElement;
 use DOMXPath;
 
-use Dompdf\Exception;
-use Dompdf\Frame;
+use DompdfArabic\Exception;
+use DompdfArabic\Frame;
 use IteratorAggregate;
 
 /**
@@ -23,7 +23,7 @@ use IteratorAggregate;
  * structure as the DomDocument, but adds additional capabilities for
  * styling and layout.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class FrameTree implements IteratorAggregate
 {

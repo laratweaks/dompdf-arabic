@@ -1,20 +1,20 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Frame;
+namespace DompdfArabic\Frame;
 
 use Iterator;
-use Dompdf\Frame;
+use DompdfArabic\Frame;
 
 /**
  * Pre-order Iterator
  *
  * Returns frames in preorder traversal order (parent then children)
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class FrameTreeIterator implements Iterator
 {

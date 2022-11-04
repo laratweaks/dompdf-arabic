@@ -1,23 +1,23 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Renderer;
+namespace DompdfArabic\Renderer;
 
-use Dompdf\Adapter\CPDF;
-use Dompdf\Css\Color;
-use Dompdf\Css\Style;
-use Dompdf\Dompdf;
-use Dompdf\Helpers;
-use Dompdf\Frame;
-use Dompdf\Image\Cache;
+use DompdfArabic\Adapter\CPDF;
+use DompdfArabic\Css\Color;
+use DompdfArabic\Css\Style;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Helpers;
+use DompdfArabic\Frame;
+use DompdfArabic\Image\Cache;
 
 /**
  * Base renderer class
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 abstract class AbstractRenderer
 {
@@ -25,7 +25,7 @@ abstract class AbstractRenderer
     /**
      * Rendering backend
      *
-     * @var \Dompdf\Canvas
+     * @var \DompdfArabic\Canvas
      */
     protected $_canvas;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Dompdf\I18N\Arabic;
+namespace DompdfArabic\I18N\Arabic;
 /**
  * ----------------------------------------------------------------------
  *  

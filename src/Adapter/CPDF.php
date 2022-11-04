@@ -1,25 +1,25 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
 
 // FIXME: Need to sanity check inputs to this class
-namespace Dompdf\Adapter;
+namespace DompdfArabic\Adapter;
 
-use Dompdf\Canvas;
-use Dompdf\Dompdf;
-use Dompdf\Exception;
-use Dompdf\FontMetrics;
-use Dompdf\Helpers;
-use Dompdf\Image\Cache;
+use DompdfArabic\Canvas;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Exception;
+use DompdfArabic\FontMetrics;
+use DompdfArabic\Helpers;
+use DompdfArabic\Image\Cache;
 use FontLib\Exception\FontNotFoundException;
 
 /**
  * PDF rendering interface
  *
- * Dompdf\Adapter\CPDF provides a simple stateless interface to the stateful one
+ * DompdfArabic\Adapter\CPDF provides a simple stateless interface to the stateful one
  * provided by the Cpdf class.
  *
  * Unless otherwise mentioned, all dimensions are in points (1/72 in).  The
@@ -29,7 +29,7 @@ use FontLib\Exception\FontNotFoundException;
  * See {@link http://www.ros.co.nz/pdf/} for more complete documentation
  * on the underlying {@link Cpdf} class.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class CPDF implements Canvas
 {
@@ -109,7 +109,7 @@ class CPDF implements Canvas
     /**
      * Instance of Cpdf class
      *
-     * @var \Dompdf\Cpdf
+     * @var \DompdfArabic\Cpdf
      */
     protected $_pdf;
 
@@ -174,7 +174,7 @@ class CPDF implements Canvas
             $this->_dompdf = $dompdf;
         }
 
-        $this->_pdf = new \Dompdf\Cpdf(
+        $this->_pdf = new \DompdfArabic\Cpdf(
             $size,
             true,
             $this->_dompdf->getOptions()->getFontCache(),
@@ -202,7 +202,7 @@ class CPDF implements Canvas
     /**
      * Returns the Cpdf instance
      *
-     * @return \Dompdf\Cpdf
+     * @return \DompdfArabic\Cpdf
      */
     public function get_cpdf()
     {
@@ -691,8 +691,8 @@ class CPDF implements Canvas
             $pdf->addForm();
         }
 
-        $ft = \Dompdf\Cpdf::ACROFORM_FIELD_CHOICE;
-        $ff = \Dompdf\Cpdf::ACROFORM_FIELD_CHOICE_COMBO;
+        $ft = \DompdfArabic\Cpdf::ACROFORM_FIELD_CHOICE;
+        $ff = \DompdfArabic\Cpdf::ACROFORM_FIELD_CHOICE_COMBO;
 
         $id = $pdf->addFormField($ft, rand(), $x, $this->y($y) - $h, $x + $w, $this->y($y), $ff, $size, $color);
         $pdf->setFormFieldOpt($id, $opts);
@@ -709,8 +709,8 @@ class CPDF implements Canvas
             $pdf->addForm();
         }
 
-        $ft = \Dompdf\Cpdf::ACROFORM_FIELD_TEXT;
-        $ff = \Dompdf\Cpdf::ACROFORM_FIELD_TEXT_MULTILINE;
+        $ft = \DompdfArabic\Cpdf::ACROFORM_FIELD_TEXT;
+        $ff = \DompdfArabic\Cpdf::ACROFORM_FIELD_TEXT_MULTILINE;
 
         $pdf->addFormField($ft, rand(), $x, $this->y($y) - $h, $x + $w, $this->y($y), $ff, $size, $color);
     }
@@ -726,19 +726,19 @@ class CPDF implements Canvas
             $pdf->addForm();
         }
 
-        $ft = \Dompdf\Cpdf::ACROFORM_FIELD_TEXT;
+        $ft = \DompdfArabic\Cpdf::ACROFORM_FIELD_TEXT;
         $ff = 0;
 
         switch ($type) {
             case 'text':
-                $ft = \Dompdf\Cpdf::ACROFORM_FIELD_TEXT;
+                $ft = \DompdfArabic\Cpdf::ACROFORM_FIELD_TEXT;
                 break;
             case 'password':
-                $ft = \Dompdf\Cpdf::ACROFORM_FIELD_TEXT;
-                $ff = \Dompdf\Cpdf::ACROFORM_FIELD_TEXT_PASSWORD;
+                $ft = \DompdfArabic\Cpdf::ACROFORM_FIELD_TEXT;
+                $ff = \DompdfArabic\Cpdf::ACROFORM_FIELD_TEXT_PASSWORD;
                 break;
             case 'submit':
-                $ft = \Dompdf\Cpdf::ACROFORM_FIELD_BUTTON;
+                $ft = \DompdfArabic\Cpdf::ACROFORM_FIELD_BUTTON;
                 break;
         }
 

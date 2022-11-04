@@ -1,18 +1,18 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace DompdfArabic\FrameReflower;
 
-use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
-use Dompdf\FrameDecorator\ListBullet as ListBulletFrameDecorator;
+use DompdfArabic\FrameDecorator\Block as BlockFrameDecorator;
+use DompdfArabic\FrameDecorator\ListBullet as ListBulletFrameDecorator;
 
 /**
  * Reflows list bullets
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class ListBullet extends AbstractFrameReflower
 {

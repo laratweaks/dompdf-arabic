@@ -1,20 +1,20 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
 use DOMDocument;
 use DOMNode;
-use Dompdf\Adapter\CPDF;
+use DompdfArabic\Adapter\CPDF;
 use DOMXPath;
-use Dompdf\Frame\Factory;
-use Dompdf\Frame\FrameTree;
-use Dompdf\Image\Cache;
-use Dompdf\Css\Stylesheet;
-use Dompdf\Helpers;
+use DompdfArabic\Frame\Factory;
+use DompdfArabic\Frame\FrameTree;
+use DompdfArabic\Image\Cache;
+use DompdfArabic\Css\Stylesheet;
+use DompdfArabic\Helpers;
 use Masterminds\HTML5;
 
 /**
@@ -57,12 +57,12 @@ use Masterminds\HTML5;
  * Frame}s are rendered using an adapted {@link Cpdf} class, originally
  * written by Wayne Munro, http://www.ros.co.nz/pdf/.  (Some performance
  * related changes have been made to the original {@link Cpdf} class, and
- * the {@link Dompdf\Adapter\CPDF} class provides a simple, stateless interface to
+ * the {@link DompdfArabic\Adapter\CPDF} class provides a simple, stateless interface to
  * PDF generation.)  PDFLib support has now also been added, via the {@link
- * Dompdf\Adapter\PDFLib}.
+ * DompdfArabic\Adapter\PDFLib}.
  *
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Dompdf
 {
@@ -961,7 +961,7 @@ class Dompdf
     /**
      * Sets the paper size & orientation
      *
-     * @param string|float[] $size 'letter', 'legal', 'A4', etc. {@link Dompdf\Adapter\CPDF::$PAPER_SIZES}
+     * @param string|float[] $size 'letter', 'legal', 'A4', etc. {@link DompdfArabic\Adapter\CPDF::$PAPER_SIZES}
      * @param string $orientation 'portrait' or 'landscape'
      * @return $this
      */
@@ -1250,7 +1250,7 @@ class Dompdf
     }
 
     /**
-     * Return the underlying Canvas instance (e.g. Dompdf\Adapter\CPDF, Dompdf\Adapter\GD)
+     * Return the underlying Canvas instance (e.g. DompdfArabic\Adapter\CPDF, DompdfArabic\Adapter\GD)
      *
      * @return Canvas
      */

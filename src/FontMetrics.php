@@ -1,10 +1,10 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
 use FontLib\Font;
 
@@ -16,7 +16,7 @@ use FontLib\Font;
  * size of text in a particular font and size.
  *
  * @static
- * @package dompdf
+ * @package dompdf-arabic
  */
 class FontMetrics
 {

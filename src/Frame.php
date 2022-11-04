@@ -1,13 +1,13 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
-use Dompdf\Css\Style;
-use Dompdf\Frame\FrameListIterator;
+use DompdfArabic\Css\Style;
+use DompdfArabic\Frame\FrameListIterator;
 
 /**
  * The main Frame class
@@ -18,7 +18,7 @@ use Dompdf\Frame\FrameListIterator;
  * Style} object. Tree structure is maintained via the parent & children
  * links.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Frame
 {

@@ -1,15 +1,15 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Adapter;
+namespace DompdfArabic\Adapter;
 
-use Dompdf\Canvas;
-use Dompdf\Dompdf;
-use Dompdf\Helpers;
-use Dompdf\Image\Cache;
+use DompdfArabic\Canvas;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Helpers;
+use DompdfArabic\Image\Cache;
 
 /**
  * Image rendering interface
@@ -17,7 +17,7 @@ use Dompdf\Image\Cache;
  * Renders to an image format supported by GD (jpeg, gif, png, xpm).
  * Not super-useful day-to-day but handy nonetheless
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class GD implements Canvas
 {

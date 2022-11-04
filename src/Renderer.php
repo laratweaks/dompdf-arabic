@@ -1,25 +1,25 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
-use Dompdf\Renderer\AbstractRenderer;
-use Dompdf\Renderer\Block;
-use Dompdf\Renderer\Image;
-use Dompdf\Renderer\ListBullet;
-use Dompdf\Renderer\TableCell;
-use Dompdf\Renderer\TableRowGroup;
-use Dompdf\Renderer\Text;
+use DompdfArabic\Renderer\AbstractRenderer;
+use DompdfArabic\Renderer\Block;
+use DompdfArabic\Renderer\Image;
+use DompdfArabic\Renderer\ListBullet;
+use DompdfArabic\Renderer\TableCell;
+use DompdfArabic\Renderer\TableRowGroup;
+use DompdfArabic\Renderer\Text;
 
 /**
  * Concrete renderer
  *
  * Instantiates several specific renderers in order to render any given frame.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Renderer extends AbstractRenderer
 {

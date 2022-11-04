@@ -1,17 +1,17 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
-use Dompdf\FrameDecorator\AbstractFrameDecorator;
-use Dompdf\FrameDecorator\Block;
-use Dompdf\FrameDecorator\ListBullet;
-use Dompdf\FrameDecorator\Page;
-use Dompdf\FrameReflower\Text as TextFrameReflower;
-use Dompdf\Positioner\Inline as InlinePositioner;
+use DompdfArabic\FrameDecorator\AbstractFrameDecorator;
+use DompdfArabic\FrameDecorator\Block;
+use DompdfArabic\FrameDecorator\ListBullet;
+use DompdfArabic\FrameDecorator\Page;
+use DompdfArabic\FrameReflower\Text as TextFrameReflower;
+use DompdfArabic\Positioner\Inline as InlinePositioner;
 
 /**
  * The line box class
@@ -19,7 +19,7 @@ use Dompdf\Positioner\Inline as InlinePositioner;
  * This class represents a line box
  * http://www.w3.org/TR/CSS2/visuren.html#line-box
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class LineBox
 {

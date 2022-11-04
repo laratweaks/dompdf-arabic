@@ -1,10 +1,10 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
 class Options
 {
@@ -61,7 +61,7 @@ class Options
      * This setting may increase the risk of system exploit. Do not change
      * this settings without understanding the consequences. Additional
      * documentation is available on the dompdf wiki at:
-     * https://github.com/dompdf/dompdf/wiki
+     * https://github.com/laratweaks/dompdf-arabic/wiki
      *
      * @var array
      */
@@ -101,7 +101,7 @@ class Options
      * The default paper size.
      *
      * North America standard is "letter"; other countries generally "a4"
-     * @see \Dompdf\Adapter\CPDF::PAPER_SIZES for valid sizes
+     * @see \DompdfArabic\Adapter\CPDF::PAPER_SIZES for valid sizes
      *
      * @var string
      */
@@ -170,7 +170,7 @@ class Options
      * This setting may increase the risk of system exploit. Do not change
      * this settings without understanding the consequences. Additional
      * documentation is available on the dompdf wiki at:
-     * https://github.com/dompdf/dompdf/wiki
+     * https://github.com/laratweaks/dompdf-arabic/wiki
      *
      * @var bool
      */
@@ -192,7 +192,7 @@ class Options
      * This setting may increase the risk of system exploit. Do not change
      * this settings without understanding the consequences. Additional
      * documentation is available on the dompdf wiki at:
-     * https://github.com/dompdf/dompdf/wiki
+     * https://github.com/laratweaks/dompdf-arabic/wiki
      *
      * @var bool
      */
@@ -272,7 +272,7 @@ class Options
      *
      * Valid settings are 'PDFLib', 'CPDF', 'GD', and 'auto'. 'auto' will
      * look for PDFLib and use it if found, or if not it will fall back on
-     * CPDF. 'GD' renders PDFs to graphic files. {@link Dompdf\CanvasFactory}
+     * CPDF. 'GD' renders PDFs to graphic files. {@link DompdfArabic\CanvasFactory}
      * ultimately determines which rendering class to instantiate
      * based on this setting.
      *
@@ -329,7 +329,7 @@ class Options
         $this->setHttpContext([
             "http" => [
                 "follow_location" => false,
-                "user_agent" => "Dompdf$ver https://github.com/dompdf/dompdf"
+                "user_agent" => "Dompdf$ver https://github.com/laratweaks/dompdf-arabic"
             ]
         ]);
 

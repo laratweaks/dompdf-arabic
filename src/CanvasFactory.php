@@ -1,10 +1,10 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
 /**
  * Create canvas instances
@@ -12,7 +12,7 @@ namespace Dompdf;
  * The canvas factory creates canvas instances based on the
  * availability of rendering backends and config options.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class CanvasFactory
 {
@@ -41,14 +41,14 @@ class CanvasFactory
             if (($backend === "auto" || $backend === "pdflib") &&
                 class_exists("PDFLib", false)
             ) {
-                $class = "Dompdf\\Adapter\\PDFLib";
+                $class = "DompdfArabic\\Adapter\\PDFLib";
             }
 
             else {
                 if ($backend === "gd" && extension_loaded('gd')) {
-                    $class = "Dompdf\\Adapter\\GD";
+                    $class = "DompdfArabic\\Adapter\\GD";
                 } else {
-                    $class = "Dompdf\\Adapter\\CPDF";
+                    $class = "DompdfArabic\\Adapter\\CPDF";
                 }
             }
         }

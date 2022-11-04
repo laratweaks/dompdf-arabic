@@ -1,17 +1,17 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace DompdfArabic\FrameReflower;
 
-use Dompdf\Dompdf;
-use Dompdf\Helpers;
-use Dompdf\Frame;
-use Dompdf\Frame\Factory;
-use Dompdf\FrameDecorator\AbstractFrameDecorator;
-use Dompdf\FrameDecorator\Block;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Helpers;
+use DompdfArabic\Frame;
+use DompdfArabic\Frame\Factory;
+use DompdfArabic\FrameDecorator\AbstractFrameDecorator;
+use DompdfArabic\FrameDecorator\Block;
 
 /**
  * Base reflower class
@@ -19,7 +19,7 @@ use Dompdf\FrameDecorator\Block;
  * Reflower objects are responsible for determining the width and height of
  * individual frames.  They also create line and page breaks as necessary.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 abstract class AbstractFrameReflower
 {
@@ -496,7 +496,7 @@ abstract class AbstractFrameReflower
 
         // Convert escaped hex characters into ascii characters (e.g. \A => newline)
         $string = preg_replace_callback("/\\\\([0-9a-fA-F]{0,6})/",
-            function ($matches) { return \Dompdf\Helpers::unichr(hexdec($matches[1])); },
+            function ($matches) { return \DompdfArabic\Helpers::unichr(hexdec($matches[1])); },
             $string);
         return $string;
     }

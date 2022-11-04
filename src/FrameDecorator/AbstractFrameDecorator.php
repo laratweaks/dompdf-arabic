@@ -1,28 +1,28 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameDecorator;
+namespace DompdfArabic\FrameDecorator;
 
 use DOMElement;
 use DOMNode;
-use Dompdf\Helpers;
-use Dompdf\Dompdf;
-use Dompdf\Exception;
-use Dompdf\Frame;
-use Dompdf\Frame\Factory;
-use Dompdf\Frame\FrameListIterator;
-use Dompdf\Frame\FrameTreeIterator;
-use Dompdf\FrameReflower\AbstractFrameReflower;
-use Dompdf\Css\Style;
-use Dompdf\Positioner\AbstractPositioner;
+use DompdfArabic\Helpers;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Exception;
+use DompdfArabic\Frame;
+use DompdfArabic\Frame\Factory;
+use DompdfArabic\Frame\FrameListIterator;
+use DompdfArabic\Frame\FrameTreeIterator;
+use DompdfArabic\FrameReflower\AbstractFrameReflower;
+use DompdfArabic\Css\Style;
+use DompdfArabic\Positioner\AbstractPositioner;
 
 /**
  * Base AbstractFrameDecorator class
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 abstract class AbstractFrameDecorator extends Frame
 {

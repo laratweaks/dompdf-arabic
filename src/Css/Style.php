@@ -1,15 +1,15 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Css;
+namespace DompdfArabic\Css;
 
-use Dompdf\Adapter\CPDF;
-use Dompdf\Exception;
-use Dompdf\FontMetrics;
-use Dompdf\Frame;
+use DompdfArabic\Adapter\CPDF;
+use DompdfArabic\Exception;
+use DompdfArabic\FontMetrics;
+use DompdfArabic\Frame;
 
 /**
  * Represents CSS properties.
@@ -165,7 +165,7 @@ use Dompdf\Frame;
  * @property int|string      $z_index                     Integer value or `auto`
  * @property string          $_dompdf_keep
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Style
 {

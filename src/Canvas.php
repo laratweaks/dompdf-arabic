@@ -1,15 +1,15 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
 /**
  * Main rendering interface
  *
- * Currently {@link Dompdf\Adapter\CPDF}, {@link Dompdf\Adapter\PDFLib}, and {@link Dompdf\Adapter\GD}
+ * Currently {@link DompdfArabic\Adapter\CPDF}, {@link DompdfArabic\Adapter\PDFLib}, and {@link DompdfArabic\Adapter\GD}
  * implement this interface.
  *
  * Implementations should measure x and y increasing to the left and down,
@@ -17,12 +17,12 @@ namespace Dompdf;
  * are free to use a unit other than points for length, but I can't
  * guarantee that the results will look any good.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 interface Canvas
 {
     /**
-     * @param string|float[] $paper       The paper size to use as either a standard paper size (see {@link Dompdf\Adapter\CPDF::$PAPER_SIZES})
+     * @param string|float[] $paper       The paper size to use as either a standard paper size (see {@link DompdfArabic\Adapter\CPDF::$PAPER_SIZES})
      *                                    or an array of the form `[x1, y1, x2, y2]` (typically `[0, 0, width, height]`).
      * @param string         $orientation The paper orientation, either `portrait` or `landscape`.
      * @param Dompdf         $dompdf      The Dompdf instance.

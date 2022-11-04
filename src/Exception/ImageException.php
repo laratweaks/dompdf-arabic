@@ -1,17 +1,17 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Exception;
+namespace DompdfArabic\Exception;
 
-use Dompdf\Exception;
+use DompdfArabic\Exception;
 
 /**
  * Image exception thrown by DOMPDF
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class ImageException extends Exception
 {

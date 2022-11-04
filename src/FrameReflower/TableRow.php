@@ -1,20 +1,20 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace DompdfArabic\FrameReflower;
 
-use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
-use Dompdf\FrameDecorator\Table as TableFrameDecorator;
-use Dompdf\FrameDecorator\TableRow as TableRowFrameDecorator;
-use Dompdf\Exception;
+use DompdfArabic\FrameDecorator\Block as BlockFrameDecorator;
+use DompdfArabic\FrameDecorator\Table as TableFrameDecorator;
+use DompdfArabic\FrameDecorator\TableRow as TableRowFrameDecorator;
+use DompdfArabic\Exception;
 
 /**
  * Reflows table rows
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class TableRow extends AbstractFrameReflower
 {

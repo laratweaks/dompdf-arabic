@@ -1,18 +1,18 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Css;
+namespace DompdfArabic\Css;
 
 use DOMElement;
 use DOMXPath;
-use Dompdf\Dompdf;
-use Dompdf\Helpers;
-use Dompdf\Exception;
-use Dompdf\FontMetrics;
-use Dompdf\Frame\FrameTree;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Helpers;
+use DompdfArabic\Exception;
+use DompdfArabic\FontMetrics;
+use DompdfArabic\Frame\FrameTree;
 
 /**
  * The master stylesheet class
@@ -23,7 +23,7 @@ use Dompdf\Frame\FrameTree;
  * elements.
  *
  * @see Style
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Stylesheet
 {
@@ -923,7 +923,7 @@ class Stylesheet
      * {@link FrameTree}.  Aside from parsing CSS, this is the main purpose
      * of this class.
      *
-     * @param \Dompdf\Frame\FrameTree $tree
+     * @param \DompdfArabic\Frame\FrameTree $tree
      */
     function apply_styles(FrameTree $tree)
     {

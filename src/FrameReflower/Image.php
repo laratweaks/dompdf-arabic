@@ -1,19 +1,19 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameReflower;
+namespace DompdfArabic\FrameReflower;
 
-use Dompdf\Helpers;
-use Dompdf\FrameDecorator\Block as BlockFrameDecorator;
-use Dompdf\FrameDecorator\Image as ImageFrameDecorator;
+use DompdfArabic\Helpers;
+use DompdfArabic\FrameDecorator\Block as BlockFrameDecorator;
+use DompdfArabic\FrameDecorator\Image as ImageFrameDecorator;
 
 /**
  * Image reflower class
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Image extends AbstractFrameReflower
 {

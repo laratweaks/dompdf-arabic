@@ -1,20 +1,20 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Positioner;
+namespace DompdfArabic\Positioner;
 
-use Dompdf\FrameDecorator\AbstractFrameDecorator;
-use Dompdf\FrameDecorator\Inline as InlineFrameDecorator;
-use Dompdf\Exception;
-use Dompdf\Helpers;
+use DompdfArabic\FrameDecorator\AbstractFrameDecorator;
+use DompdfArabic\FrameDecorator\Inline as InlineFrameDecorator;
+use DompdfArabic\Exception;
+use DompdfArabic\Helpers;
 
 /**
  * Positions inline frames
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Inline extends AbstractPositioner
 {

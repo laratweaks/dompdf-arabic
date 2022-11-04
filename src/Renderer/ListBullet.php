@@ -1,21 +1,21 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Renderer;
+namespace DompdfArabic\Renderer;
 
-use Dompdf\Helpers;
-use Dompdf\Frame;
-use Dompdf\FrameDecorator\ListBullet as ListBulletFrameDecorator;
-use Dompdf\FrameDecorator\ListBulletImage;
-use Dompdf\Image\Cache;
+use DompdfArabic\Helpers;
+use DompdfArabic\Frame;
+use DompdfArabic\FrameDecorator\ListBullet as ListBulletFrameDecorator;
+use DompdfArabic\FrameDecorator\ListBulletImage;
+use DompdfArabic\Image\Cache;
 
 /**
  * Renders list bullets
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class ListBullet extends AbstractRenderer
 {

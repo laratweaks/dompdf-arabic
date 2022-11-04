@@ -1,19 +1,19 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Renderer;
+namespace DompdfArabic\Renderer;
 
-use Dompdf\Adapter\CPDF;
-use Dompdf\Frame;
-use Dompdf\I18N\I18N_Arabic;
+use DompdfArabic\Adapter\CPDF;
+use DompdfArabic\Frame;
+use DompdfArabic\I18N\I18N_Arabic;
 
 /**
  * Renders text frames
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Text extends AbstractRenderer
 {
@@ -39,7 +39,7 @@ class Text extends AbstractRenderer
     const DECO_EXTENSION = 0.0;
 
     /**
-     * @param \Dompdf\FrameDecorator\Text $frame
+     * @param \DompdfArabic\FrameDecorator\Text $frame
      */
     function render(Frame $frame)
     {

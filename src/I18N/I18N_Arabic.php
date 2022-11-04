@@ -1,6 +1,6 @@
 <?php
 
-namespace Dompdf\I18N;
+namespace DompdfArabic\I18N;
 
 use ReflectionMethod;
 
@@ -223,8 +223,8 @@ class I18N_Arabic
         }
 
         $this->myFile  = $library;
-        $this->myClass = 'Dompdf\I18N\Arabic\I18N_Arabic_' . $library;
-		$class         = 'Dompdf\I18N\Arabic\I18N_Arabic_' . $library;
+        $this->myClass = 'DompdfArabic\I18N\Arabic\I18N_Arabic_' . $library;
+		$class         = 'DompdfArabic\I18N\Arabic\I18N_Arabic_' . $library;
 
         /*
 		if (!$this->_useAutoload) {

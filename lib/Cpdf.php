@@ -7,7 +7,7 @@
  * @license http://creativecommons.org/licenses/publicdomain/ Public Domain
  * @package Cpdf
  */
-namespace Dompdf;
+namespace DompdfArabic;
 
 use FontLib\Exception\FontNotFoundException;
 use FontLib\Font;

@@ -1,21 +1,21 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\FrameDecorator;
+namespace DompdfArabic\FrameDecorator;
 
-use Dompdf\Cellmap;
+use DompdfArabic\Cellmap;
 use DOMNode;
-use Dompdf\Css\Style;
-use Dompdf\Dompdf;
-use Dompdf\Frame;
+use DompdfArabic\Css\Style;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Frame;
 
 /**
  * Decorates Frames for table layout
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class Table extends AbstractFrameDecorator
 {

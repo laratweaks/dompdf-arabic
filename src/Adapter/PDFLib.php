@@ -1,22 +1,22 @@
 <?php
 /**
- * @package dompdf
- * @link    https://github.com/dompdf/dompdf
+ * @package dompdf-arabic
+ * @link    https://github.com/laratweaks/dompdf-arabic
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-namespace Dompdf\Adapter;
+namespace DompdfArabic\Adapter;
 
-use Dompdf\Canvas;
-use Dompdf\Dompdf;
-use Dompdf\Exception;
-use Dompdf\FontMetrics;
-use Dompdf\Helpers;
-use Dompdf\Image\Cache;
+use DompdfArabic\Canvas;
+use DompdfArabic\Dompdf;
+use DompdfArabic\Exception;
+use DompdfArabic\FontMetrics;
+use DompdfArabic\Helpers;
+use DompdfArabic\Image\Cache;
 
 /**
  * PDF rendering interface
  *
- * Dompdf\Adapter\PDFLib provides a simple, stateless interface to the one
+ * DompdfArabic\Adapter\PDFLib provides a simple, stateless interface to the one
  * provided by PDFLib.
  *
  * Unless otherwise mentioned, all dimensions are in points (1/72 in).
@@ -26,7 +26,7 @@ use Dompdf\Image\Cache;
  * See {@link http://www.pdflib.com/} for more complete documentation
  * on the underlying PDFlib functions.
  *
- * @package dompdf
+ * @package dompdf-arabic
  */
 class PDFLib implements Canvas
 {
@@ -36,7 +36,7 @@ class PDFLib implements Canvas
      *
      * @var array
      */
-    public static $PAPER_SIZES = []; // Set to Dompdf\Adapter\CPDF::$PAPER_SIZES below.
+    public static $PAPER_SIZES = []; // Set to DompdfArabic\Adapter\CPDF::$PAPER_SIZES below.
 
     /**
      * Whether to create PDFs in memory or on disk
@@ -78,7 +78,7 @@ class PDFLib implements Canvas
     ];
 
     /**
-     * @var \Dompdf\Dompdf
+     * @var \DompdfArabic\Dompdf
      */
     protected $_dompdf;
 
